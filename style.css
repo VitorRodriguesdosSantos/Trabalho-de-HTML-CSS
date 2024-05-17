@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* { /* resetando as configurações do site */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+img { /* modificando o tamanho da imagem */
+    width: 150px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;  
+    margin: 40px;
+}
+
+body {
+   background-color: black;
+}
+
+header a {
+   text-decoration: none;
+   color: white;
+   border-radius: 10px;
+   transition-duration: 0,5s;
+}
+
+.interface { 
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    padding: 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
