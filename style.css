@@ -12,8 +12,6 @@
 
 .logo > img{ /* modificando o tamanho da imagem */
     width: 150px;
-    /* box-shadow: 3px 3px 0px rgba(168, 168, 168, 0.411); */
-    padding-right: 20px;
 }
 
 body {
@@ -22,7 +20,8 @@ body {
 
 header {
     background-color: black;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418)
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+    background-attachment: fixed;
 }
 
 p {
@@ -60,7 +59,7 @@ a:hover {
 }
 
 header {
-    padding: 4%;
+    padding: 60px 4%;
 }
 
 header > .interface {
@@ -73,41 +72,153 @@ header > .interface {
     max-width: 300px;
     box-shadow: 2px 2px 10px black;
     margin-top: 50px;
-    margin-right: 60px; 
     margin-bottom: 40px;
 }
 
- /* p {
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
-}
-
- h1 {
-    padding-left: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
-
 .conteudo1 {
-    /* padding-top: 80px;
-    padding-left: 150px;
-    padding-bottom: 150px;
-    margin-right: 20px; */
     padding: 60px 4%;
 }
 
 .imagem-Markus img{
     max-width: 300px;
-    box-shadow: 2px 2px 10px black;
-    margin-right: 60px;
+    box-shadow: 2px 2px 10px black; 
 }
 
 .conteudo2 {
-    /* padding-top: 20px;
-    padding-left: 150px;
-    padding-bottom: 150px;
-    margin-right: 20px; */
-    padding: 40px 4%;
+    padding: 60px 4%;
 }
 
+.titulo-Jogos h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5vh;
+    margin-top: 80px;
+}
+
+.jogo1, .jogo2, .jogo3 {
+    padding: 60px 4%;
+    color: white;
+}
+
+@keyframes animação {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.imagem-Minecraft img{
+    max-width: 300px;
+    position: relative;
+    animation: animação 2s ease-in-out infinite alternate;
+}
+
+.jogo1 .flex {
+    align-items: center;
+    gap: 50px;
+}
+
+.txt-jogo1, .txt-jogo2, .txt-jogo3 h2 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.download button {
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: darkgreen;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 9px  rgba(1, 180, 1, 0.658);
+    transform: scale(1.05);
+}
+
+.jogo2 .flex {
+    align-items: center;
+    gap: 50px;
+}
+
+.jogo3 .flex {
+    align-items: center;
+    gap: 50px;
+}
+
+.formulario {
+    padding: 80px 4%;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input {
+    width: 100%;
+    background-color: rgba(41, 41, 41, 0.966); 
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+}
+
+.butão-formulario {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.butão-formulario input {
+    width: 100px;
+    background-color: darkgreen;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.butão-formulario input:hover {
+    box-shadow: 0px 0px 9px  rgba(1, 180, 1, 0.658);
+    transform: scale(1.05);
+}
+
+.menu-celular {
+    text-align: center;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-celular {
+        display: block;
+        margin-top: 20px;
+    }
+
+}
