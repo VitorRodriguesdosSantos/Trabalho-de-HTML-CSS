@@ -125,6 +125,10 @@ header > .interface {
     margin-bottom: 10px;
 }
 
+h2 {
+    padding-bottom: 10px;
+}
+
 .download button {
     padding: 8px 10px;
     border: 0;
