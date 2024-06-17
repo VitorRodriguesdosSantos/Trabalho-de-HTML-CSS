@@ -32,7 +32,7 @@ p {
 
 h1 {
     color: white;
-    font-size: 3.5vh;
+    font-size: 35px;
 }
 
 header a { 
@@ -91,7 +91,7 @@ header > .interface {
 .titulo-Jogos h1 {
     color: white;
     text-align: center;
-    font-size: 4.5vh;
+    font-size: 35px;
     margin-top: 80px;
 }
 
