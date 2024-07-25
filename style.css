@@ -205,6 +205,31 @@ form input {
     display: none;
 }
 
+/* RODAPÉ */
+footer {
+    padding: 20px 4%;   
+    box-shadow: 0 0 40px 10px #ffffff1d
+}
+
+.logo-rodape > img {
+    width: 60px;
+}
+
+.link-rodape button {
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: darkgreen;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 700px) {
     .flex {
         flex-direction: column;
