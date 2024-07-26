@@ -3,7 +3,10 @@
 * { /* resetando as configurações do site */
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .flex {
@@ -71,7 +74,7 @@ header > .interface {
 .imagem-sede img{
     max-width: 300px;
     box-shadow: 2px 2px 10px black;
-    margin-top: 50px;
+    margin-top: 110px;
     margin-bottom: 40px;
 }
 
@@ -81,6 +84,7 @@ header > .interface {
 
 .imagem-Markus img{
     max-width: 300px;
+    margin-top: 90px;
     box-shadow: 2px 2px 10px black; 
 }
 
@@ -154,6 +158,37 @@ button:hover {
     gap: 50px;
 }
 
+/* LIVROS */
+.livros {
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.livros .flex {
+    gap: 30px;
+}
+
+.livros h2 {
+    color: darkgreen;
+}
+
+.livros img {
+    width: 150px;
+}
+
+.livros .livro-caixa {
+    color: white;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.livros .livro-caixa:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.425);
+}
+
 .formulario {
     padding: 80px 4%;
 }
@@ -208,21 +243,15 @@ form input {
 /* RODAPÉ */
 footer {
     padding: 20px 4%;   
-    box-shadow: 0 0 40px 10px #ffffff1d
+    box-shadow: 0 0 10px 10px #ffffff1d
 }
 
 .logo-rodape > img {
     width: 60px;
 }
 
-.link-rodape button {
-    padding: 8px 10px;
-    border: 0;
-    border-radius: 30px;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: darkgreen;
-    cursor: pointer;
+.email-mojang p {
+    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -238,6 +267,10 @@ footer .flex {
 
     p {
         font-size: 20px;
+    }
+
+    .email-mojang p {
+        text-align: center;
     }
 
     .menu {
