@@ -1,30 +1,21 @@
 @charset "UTF-8";
-
+/*  ESTILOS GERAIS */
 * { /* resetando as configurações do site */
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /* font */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.flex {
+.flex { /* Classe flexivel */
     display: flex;
 }
 
-.logo > img{ /* modificando o tamanho da imagem */
-    width: 180px;
-}
-
 body {
-   background-color: #262423;
-}
-
-header {
-    background-color: black;
-    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
-    background-attachment: fixed;
+   background-color: #262423; /* muda a cor de fundo */
 }
 
 p {
@@ -38,6 +29,22 @@ h1 {
     font-size: 35px;
 }
 
+.interface { /* limita ate onde o conteudo vai */
+    max-width: 1280px;
+    margin: auto;
+}
+/* */
+.logo > img{ /* modificando o tamanho da imagem */
+    width: 180px;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: black;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
+    padding: 60px 4%;
+}
+
 header a { 
    text-decoration: none;
    background-color: rgba(41, 41, 41, 0.966);
@@ -45,66 +52,59 @@ header a {
    border-radius: 10px;
    padding: 20px;
    transition-duration: 0.2s; 
-   cursor: pointer;
-   display: inline-block;
+   cursor: pointer; /* troca o curso */
+   display: inline-block; /* alinha os elementos*/
    font-size: 15px;
 }
 
-a:hover {
+a:hover { /* altera o estilo dos links au passa o mause */
     background-color: rgba(255, 255, 255, 0.425);
     color: white;
     transform: scale(1.05);
 }
 
-.interface { 
-    max-width: 1280px;
-    margin: auto;
-}
-
-header {
-    padding: 60px 4%;
-}
-
-header > .interface {
+header > .interface { /* centraliza com espaçamento */
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.imagem-sede img{
+/* CORPO DO SITE */
+.sede-mojang .imagem-sede img{
     max-width: 300px;
     box-shadow: 2px 2px 10px black;
     margin-top: 110px;
     margin-bottom: 40px;
 }
 
-.conteudo1 {
+.sede-mojang .conteudo-sede {
     padding: 60px 4%;
 }
 
-.imagem-Markus img{
+.fundador-mojang .imagem-Markus img{
     max-width: 300px;
     margin-top: 90px;
     box-shadow: 2px 2px 10px black; 
 }
 
-.conteudo2 {
+.fundador-mojang .conteudo-fundador {
     padding: 60px 4%;
 }
 
-.titulo-Jogos h1 {
+/* JOGOS DA MOJANG */
+.jogos-mojang .titulo-Jogos h1 {
     color: white;
     text-align: center;
     font-size: 35px;
     margin-top: 80px;
 }
 
-.jogo1, .jogo2, .jogo3 {
+.jogos-mojang .jogo1, .jogo2, .jogo3 {
     padding: 60px 4%;
     color: white;
 }
 
-@keyframes animação {
+@keyframes animação { /* faz um animação */
     0% {
         top: 0;
     }
@@ -113,18 +113,18 @@ header > .interface {
     }
 }
 
-.imagem-Minecraft img{
+.jogos-mojang .imagem-Minecraft img{
     max-width: 300px;
     position: relative;
     animation: animação 2s ease-in-out infinite alternate;
 }
 
-.jogo1 .flex {
+.jogos-mojang .jogo1 .flex {
     align-items: center;
     gap: 50px;
 }
 
-.txt-jogo1, .txt-jogo2, .txt-jogo3 h2 {
+.jogos-mojang .txt-jogo1, .txt-jogo2, .txt-jogo3 h2 {
     color: darkgreen;
 }
 
@@ -132,7 +132,7 @@ h2 {
     padding-bottom: 10px;
 }
 
-.download button {
+.jogos-mojang .download button {
     padding: 8px 10px;
     border: 0;
     border-radius: 30px;
@@ -143,40 +143,40 @@ h2 {
     margin-top: 20px;
 }
 
-button:hover {
+.jogos-mojang button:hover {
     box-shadow: 0px 0px 9px  rgba(1, 180, 1, 0.658);
     transform: scale(1.05);
 }
 
-.jogo2 .flex {
+.jogos-mojang .jogo2 .flex {
     align-items: center;
     gap: 50px;
 }
 
-.jogo3 .flex {
+.jogos-mojang .jogo3 .flex {
     align-items: center;
     gap: 50px;
 }
 
 /* LIVROS */
-.livros {
+.livros-mojang {
     padding: 41px 4%;
     text-align: center;
 }
 
-.livros .flex {
+.livros-mojang .flex {
     gap: 30px;
 }
 
-.livros h2 {
+.livros-mojang h2 {
     color: darkgreen;
 }
 
-.livros img {
+.livrolivros-mojangs img {
     width: 150px;
 }
 
-.livros .livro-caixa {
+.livros-mojang .livro-caixa {
     color: white;
     margin-top: 40px;
     padding: 40px;
@@ -184,11 +184,12 @@ button:hover {
     transition: 0.3s;
 }
 
-.livros .livro-caixa:hover {
+.livros-mojang .livro-caixa:hover {
     transform: scale(1.06);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.425);
 }
 
+/* FORMULARIO */
 .formulario {
     padding: 80px 4%;
 }
@@ -198,7 +199,7 @@ button:hover {
     padding-bottom: 30px;
 }
 
-form {
+.formulario form {
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -206,7 +207,7 @@ form {
     flex-direction: column;
 }
 
-form input {
+.formulario form input {
     width: 100%;
     background-color: rgba(41, 41, 41, 0.966); 
     border: none;
@@ -217,12 +218,12 @@ form input {
     font-size: 15px;
 }
 
-.butão-formulario {
+.formulario .butão-formulario {
     margin-top: 15px;
     text-align: center;
 }
 
-.butão-formulario input {
+.formulario .butão-formulario input {
     width: 100px;
     background-color: darkgreen;
     color: black;
@@ -230,14 +231,9 @@ form input {
     cursor: pointer;
 }
 
-.butão-formulario input:hover {
+.formulario .butão-formulario input:hover {
     box-shadow: 0px 0px 9px  rgba(1, 180, 1, 0.658);
     transform: scale(1.05);
-}
-
-.menu-celular {
-    text-align: center;
-    display: none;
 }
 
 /* RODAPÉ */
@@ -258,6 +254,12 @@ footer {
 footer .flex {
     justify-content: space-between;
 }
+
+/* MENU PARA TELAS MENORES */
+.menu-celular {
+    text-align: center;
+    display: none;
+}   
 
 @media screen and (max-width: 700px) {
     .flex {
