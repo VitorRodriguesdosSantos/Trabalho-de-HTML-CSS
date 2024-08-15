@@ -34,11 +34,11 @@ h1 {
     margin: auto;
 }
 
+/* CABEÇALHO */
 .logo > img{ /* modificando o tamanho da imagem */
     width: 180px;
 }
 
-/* CABEÇALHO */
 header {
     background-color: black;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
@@ -84,7 +84,7 @@ header > .interface { /* centraliza com espaçamento */
 .fundador-mojang .imagem-Markus img{
     max-width: 300px;
     margin-top: 90px;
-    box-shadow: 2px 2px 10px black; 
+    box-shadow: 2px 2px 10px black;
 }
 
 .fundador-mojang .conteudo-fundador {
