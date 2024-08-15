@@ -239,7 +239,7 @@ h2 {
 /* RODAPÉ */
 footer {
     padding: 20px 4%;   
-    box-shadow: 0 0 10px 10px #ffffff1d
+    box-shadow: 0 0 10px 10px #ffffff1d;
 }
 
 .logo-rodape > img {
