@@ -3,8 +3,7 @@
 * { /* resetando as configurações do site */
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
-    /* font */
+    box-sizing: border-box; /* padding e a border são incluídos no total width e height */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -27,13 +26,14 @@ p {
 h1 {
     color: white;
     font-size: 35px;
+    padding-bottom: 20px;
 }
 
-.interface { /* limita ate onde o conteudo vai */
+.interface { /* limita ate onde o conteudo vai e centraliza */
     max-width: 1280px;
     margin: auto;
 }
-/* */
+
 .logo > img{ /* modificando o tamanho da imagem */
     width: 180px;
 }
@@ -42,16 +42,16 @@ h1 {
 header {
     background-color: black;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.418);
-    padding: 60px 4%;
+    padding: 60px 4%; /* Espaçamento interno do cabeçalho */
 }
 
 header a { 
    text-decoration: none;
-   background-color: rgba(41, 41, 41, 0.966);
+   background-color: rgba(41, 41, 41, 0.966); /* Cor de fundo */
    color: rgb(202, 202, 202);
    border-radius: 10px;
    padding: 20px;
-   transition-duration: 0.2s; 
+   transition-duration: 0.2s;
    cursor: pointer; /* troca o curso */
    display: inline-block; /* alinha os elementos*/
    font-size: 15px;
@@ -60,7 +60,7 @@ header a {
 a:hover { /* altera o estilo dos links au passa o mause */
     background-color: rgba(255, 255, 255, 0.425);
     color: white;
-    transform: scale(1.05);
+    transform: scale(1.05);  /* Aumenta o tamanho ao passar o mouse */
 }
 
 header > .interface { /* centraliza com espaçamento */
@@ -106,22 +106,22 @@ header > .interface { /* centraliza com espaçamento */
 
 @keyframes animação { /* faz um animação */
     0% {
-        top: 0;
+        top: 0; /* Posição inicial */
     }
     100% {
-        top: 20px;
+        top: 20px; /* Posição final */
     }
 }
 
 .jogos-mojang .imagem-Minecraft img{
     max-width: 300px;
-    position: relative;
-    animation: animação 2s ease-in-out infinite alternate;
+    position: relative; /* Define a posição relativa para a animação */
+    animation: animação 2s ease-in-out infinite alternate; /* Aplica a animação */
 }
 
 .jogos-mojang .jogo1 .flex {
     align-items: center;
-    gap: 50px;
+    gap: 50px; /* Define o espaçamento entre os itens */
 }
 
 .jogos-mojang .txt-jogo1, .txt-jogo2, .txt-jogo3 h2 {
@@ -172,7 +172,7 @@ h2 {
     color: darkgreen;
 }
 
-.livrolivros-mojangs img {
+.livros-mojangs img {
     width: 150px;
 }
 
@@ -201,10 +201,10 @@ h2 {
 
 .formulario form {
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* Alinha os itens em coluna */
 }
 
 .formulario form input {
@@ -252,7 +252,7 @@ footer {
 }
 
 footer .flex {
-    justify-content: space-between;
+    justify-content: space-between; /* Espaçamento entre os itens */
 }
 
 /* MENU PARA TELAS MENORES */
@@ -263,7 +263,7 @@ footer .flex {
 
 @media screen and (max-width: 700px) {
     .flex {
-        flex-direction: column;
+        flex-direction: column; /* Alinha os itens em coluna */
         text-align: center;
     }
 
