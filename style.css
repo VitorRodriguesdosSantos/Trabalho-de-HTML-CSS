@@ -259,16 +259,12 @@ footer .flex {
 .menu-celular {
     text-align: center;
     display: none;
-}   
+}
 
 @media screen and (max-width: 700px) {
     .flex {
         flex-direction: column; /* Alinha os itens em coluna */
         text-align: center;
-    }
-
-    p {
-        font-size: 20px;
     }
 
     .gmail-mojang p {
